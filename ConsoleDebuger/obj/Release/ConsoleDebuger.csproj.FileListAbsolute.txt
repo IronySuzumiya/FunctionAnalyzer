@@ -1,0 +1,8 @@
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\ConsoleDebuger\bin\Release\ConsoleDebuger.exe.config
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\ConsoleDebuger\bin\Release\ConsoleDebuger.exe
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\ConsoleDebuger\bin\Release\ConsoleDebuger.pdb
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\ConsoleDebuger\bin\Release\FunctionAnalyzer.dll
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\ConsoleDebuger\bin\Release\FunctionAnalyzer.pdb
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\ConsoleDebuger\obj\Release\ConsoleDebuger.csprojResolveAssemblyReference.cache
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\ConsoleDebuger\obj\Release\ConsoleDebuger.exe
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\ConsoleDebuger\obj\Release\ConsoleDebuger.pdb

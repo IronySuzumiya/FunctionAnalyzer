@@ -10,3 +10,9 @@ C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAna
 C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAnalyzer\bin\Debug\FunctionAnalyzer.dll.config
 C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAnalyzer\bin\Debug\FunctionAnalyzer.dll
 C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAnalyzer\obj\Debug\FunctionAnalyzer.dll
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\FunctionAnalyzer\bin\Debug\FunctionAnalyzer.dll.config
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\FunctionAnalyzer\bin\Debug\FunctionAnalyzer.dll
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\FunctionAnalyzer\bin\Debug\FunctionAnalyzer.pdb
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\FunctionAnalyzer\obj\Debug\FunctionAnalyzer.csprojResolveAssemblyReference.cache
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\FunctionAnalyzer\obj\Debug\FunctionAnalyzer.dll
+C:\Users\asus\Documents\GitHub\FunctionAnalyzer\FunctionAnalyzer\obj\Debug\FunctionAnalyzer.pdb
