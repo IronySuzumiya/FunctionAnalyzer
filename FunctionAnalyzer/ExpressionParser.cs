@@ -10,7 +10,7 @@ using FunctionAnalyzer.Expressions.FunctionExpressions;
 
 namespace FunctionAnalyzer
 {
-    class ParsingException : Exception
+    public class ParsingException : Exception
     {
         public ParsingException(string message) : base(message) { }
     }
@@ -228,15 +228,7 @@ namespace FunctionAnalyzer
 
         private static RawExpression UnsafeParse(char* input)
         {
-            try
-            {
-                return Exp3Parse(&input);
-            }
-            catch(Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return new NumberItem(double.NaN);
-            }
+            return Exp3Parse(&input);
         }
 
         public static RawExpression Parse(string origFuncString)

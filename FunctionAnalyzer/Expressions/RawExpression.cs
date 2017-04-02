@@ -9,7 +9,7 @@ using FunctionAnalyzer.Expressions.PrimitiveItems;
 
 namespace FunctionAnalyzer.Expressions
 {
-    class ExcutingException : Exception
+    public class ExcutingException : Exception
     {
         public ExcutingException(string message) : base(message) { }
     }
