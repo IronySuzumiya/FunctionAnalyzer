@@ -18,33 +18,36 @@ namespace FunctionAnalyzer.Expressions
             return exp.Execute(new Dictionary<string, double> { { varName, varValue } });
         }
 
-        public static double Solve(this RawExpression exp, string varName, double varValue, double EPS = 1E-15, int ITER_MAX_COUNT = 100)
+        public static double Solve(this RawExpression exp, string varName, double start)
         {
-            try
+            return exp.Simplify().Solve(exp.Differentiate(varName).Simplify(), varName, start);
+        }
+
+        public static double Solve(this RawExpression f, RawExpression df, string varName, double start)
+        {
+            return f.Compile(varName).Solve(df.Compile(varName), start);
+        }
+
+        public static double Solve(this Func<double, double> f, Func<double, double> df, double start
+            , double EPS = 1E-10, int ITER_MAX_COUNT = 100)
+        {
+            int cnt = 0;
+            double fn, dfn;
+            fn = f(start);
+            while ((fn > EPS || fn < -EPS) && cnt < ITER_MAX_COUNT)
             {
-                int cnt = 0;
-                double fn, dfn;
-                fn = exp.Execute(varName, varValue);
-                while ((fn > EPS || fn < -EPS) && cnt < ITER_MAX_COUNT)
-                {
-                    dfn = exp.Differentiate(varName).Execute(varName, varValue);
-                    varValue -= fn / dfn;
-                    fn = exp.Execute(varName, varValue);
-                    ++cnt;
-                }
-                if(cnt >= ITER_MAX_COUNT)
-                {
-                    return double.NaN;
-                }
-                else
-                {
-                    return varValue;
-                }
+                dfn = df(start);
+                start -= fn / dfn;
+                fn = f(start);
+                ++cnt;
             }
-            catch(ExcutingException ex)
+            if (cnt >= ITER_MAX_COUNT)
             {
-                Console.WriteLine(ex.Message);
                 return double.NaN;
+            }
+            else
+            {
+                return start;
             }
         }
     }
