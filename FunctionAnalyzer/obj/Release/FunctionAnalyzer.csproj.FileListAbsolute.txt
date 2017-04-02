@@ -1,0 +1,11 @@
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\bin\Release\FunctionAnalyzer.exe.config
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\bin\Release\FunctionAnalyzer.exe
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\bin\Release\FunctionAnalyzer.pdb
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\obj\Release\FunctionAnalyzer.exe
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\obj\Release\FunctionAnalyzer.pdb
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAnalyzer\bin\Release\FunctionAnalyzer.exe.config
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAnalyzer\obj\Release\FunctionAnalyzer.exe
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAnalyzer\obj\Release\FunctionAnalyzer.pdb
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAnalyzer\bin\Release\FunctionAnalyzer.exe
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAnalyzer\bin\Release\FunctionAnalyzer.pdb
+C:\Users\asus\Documents\Visual Studio 2015\Projects\FunctionAnalyzer\FunctionAnalyzer\obj\Release\FunctionAnalyzer.csprojResolveAssemblyReference.cache
