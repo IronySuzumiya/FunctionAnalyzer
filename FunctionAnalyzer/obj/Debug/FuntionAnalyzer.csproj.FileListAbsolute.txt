@@ -1,6 +1,0 @@
-c:\users\asus\documents\visual studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\bin\Debug\FuntionAnalyzer.exe.config
-c:\users\asus\documents\visual studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\bin\Debug\FuntionAnalyzer.exe
-c:\users\asus\documents\visual studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\bin\Debug\FuntionAnalyzer.pdb
-c:\users\asus\documents\visual studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\obj\Debug\FuntionAnalyzer.csprojResolveAssemblyReference.cache
-c:\users\asus\documents\visual studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\obj\Debug\FuntionAnalyzer.exe
-c:\users\asus\documents\visual studio 2015\Projects\FuntionAnalyzer\FuntionAnalyzer\obj\Debug\FuntionAnalyzer.pdb
