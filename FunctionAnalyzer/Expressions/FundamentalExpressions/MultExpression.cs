@@ -15,7 +15,14 @@ namespace FunctionAnalyzer.Expressions.FundamentalExpressions
 
         public override RawExpression Differentiate(string varName)
         {
-            return (lhs * rhs.Differentiate(varName)) + (lhs.Differentiate(varName) * rhs);
+            if(lhs.ContainsVariable(varName) || rhs.ContainsVariable(varName))
+            {
+                return (lhs * rhs.Differentiate(varName)) + (lhs.Differentiate(varName) * rhs);
+            }
+            else
+            {
+                return new NumberItem(0);
+            }
         }
 
         public override double Execute(IDictionary<string, double> @params)

@@ -13,7 +13,7 @@ namespace FunctionAnalyzer.Expressions.FunctionExpressions
         public ExpExpression() { }
         public ExpExpression(RawExpression op) : base(op) { }
 
-        public override RawExpression Differentiate(string varName)
+        public override RawExpression DifferentiateInternal(string varName)
         {
             return op.Differentiate(varName) * new ExpExpression(op);
         }

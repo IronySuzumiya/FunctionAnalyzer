@@ -16,7 +16,7 @@ namespace FunctionAnalyzer.Expressions.FunctionExpressions
         public CotExpression() { }
         public CotExpression(RawExpression op) : base(op) { }
 
-        public override RawExpression Differentiate(string varName)
+        public override RawExpression DifferentiateInternal(string varName)
         {
             return -((new NumberItem(1) / (new SinExpression(op) ^ new NumberItem(2))) * op.Differentiate(varName));
         }

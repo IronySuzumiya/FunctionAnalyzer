@@ -115,7 +115,15 @@ namespace FunctionAnalyzer
                 var exp = InBracketParse(reader);
                 if (!Is(reader, ')'))
                 {
-                    throw new ParsingException("Except a \")\" at " + new string(*reader));
+                    var tail = new string(*reader);
+                    if (tail != "")
+                    {
+                        throw new ParsingException("Expect a \")\" at " + tail);
+                    }
+                    else
+                    {
+                        throw new ParsingException("Except a \")\" at the end");
+                    }
                 }
                 else
                 {
@@ -147,7 +155,15 @@ namespace FunctionAnalyzer
                             }
                             if(!Is(reader, ')'))
                             {
-                                throw new ParsingException("Expect a \")\" at " + new string(*reader));
+                                var tail = new string(*reader);
+                                if(tail != "")
+                                {
+                                    throw new ParsingException("Expect a \")\" at " + tail);
+                                }
+                                else
+                                {
+                                    throw new ParsingException("Except a \")\" at the end");
+                                }
                             }
                             else
                             {
@@ -161,7 +177,15 @@ namespace FunctionAnalyzer
                     }
                     else
                     {
-                        throw new ParsingException("Invalid Symbol at " + new string(*reader));
+                        var tail = new string(*reader);
+                        if (tail != "")
+                        {
+                            throw new ParsingException("Invalid Symbol at " + tail);
+                        }
+                        else
+                        {
+                            throw new ParsingException("Invalid Symbol at the end");
+                        }
                     }
                 }
             }

@@ -14,7 +14,7 @@ namespace FunctionAnalyzer.Expressions.FunctionExpressions
         public TanExpression() { }
         public TanExpression(RawExpression op) : base(op) { }
 
-        public override RawExpression Differentiate(string varName)
+        public override RawExpression DifferentiateInternal(string varName)
         {
             return new NumberItem(1) / (new CosExpression(op) ^ new NumberItem(2));
         }

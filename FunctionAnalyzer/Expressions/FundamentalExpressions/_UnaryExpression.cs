@@ -34,7 +34,7 @@ namespace FunctionAnalyzer.Expressions.FundamentalExpressions
         public override Expression CompileInternal(IDictionary<string, Expression> @params)
         {
             var methodInfo = typeof(Expression).GetMethod(ExpCallName
-                , new Type[] { typeof(Expression), typeof(Expression) });
+                , new Type[] { typeof(Expression) });
             return (Expression)methodInfo.Invoke(null, new object[] { op.CompileInternal(@params) });
         }
 

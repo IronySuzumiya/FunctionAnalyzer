@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FunctionAnalyzer.Expressions.PrimitiveItems;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -112,5 +113,19 @@ namespace FunctionAnalyzer.Expressions.FunctionExpressions
         {
             return op.ContainsVariable(varName);
         }
+
+        public override RawExpression Differentiate(string varName)
+        {
+            if(op.ContainsVariable(varName))
+            {
+                return DifferentiateInternal(varName);
+            }
+            else
+            {
+                return new NumberItem(0);
+            }
+        }
+
+        abstract public RawExpression DifferentiateInternal(string varName);
     }
 }

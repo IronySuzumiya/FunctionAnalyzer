@@ -14,7 +14,7 @@ namespace FunctionAnalyzer.Expressions.FunctionExpressions
         public LnExpression() { }
         public LnExpression(RawExpression op) : base(op) { }
 
-        public override RawExpression Differentiate(string varName)
+        public override RawExpression DifferentiateInternal(string varName)
         {
             return (new NumberItem(1) / op) * op.Differentiate(varName);
         }

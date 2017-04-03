@@ -13,7 +13,7 @@ namespace FunctionAnalyzer.Expressions.FunctionExpressions
         public CosExpression() { }
         public CosExpression(RawExpression op) : base(op) { }
 
-        public override RawExpression Differentiate(string varName)
+        public override RawExpression DifferentiateInternal(string varName)
         {
             return -(op.Differentiate(varName) * new SinExpression(op));
         }
